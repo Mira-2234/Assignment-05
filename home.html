@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+
+    <!-- tailwind + daisyUI -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+     <!-- Font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <style>
+        *{
+              font-family: "Geist", sans-serif;
+        }
+     </style>
+</head>
+<body>
+
+    <nav class="w-full border border-b border-gray-300 py-3 ">
+       <div class="w-11/12 mx-auto flex justify-between mt-3 ">
+         <div class="flex gap-2 items-center">
+        <img class="w-10" src="./assets/github-logo.png" alt="">
+        <h2 class="text-[#1F2937] font-bold text-xl">GitHub Issues Tracker</h2>
+       </div>
+
+       <div class="flex gap-2">
+
+       <div class="relative w-80">
+         <input class="w-full border border-gray-300 rounded-md py-2 pl-10 pr-3 outline-none" 
+         type="search" placeholder="Search issues..."> <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+       </div>
+         <button class="bg-[#4A00FF] rounded-sm py-2 px-4 text-white font-semibold"><i class="fa-solid fa-plus "></i>New Issue</button>
+       </div>
+       </div>
+    
+    </nav>
+
+    <section class="mt-10 mx-40 bg-white shadow-sm rounded-sm p-5">
+        <button class="border border-gray-300 rounded-sm py-1 px-5 font-semibold">All</button>
+        <button class="border border-gray-300 rounded-sm py-1 px-5 font-semibold">Open</button>
+        <button class="border border-gray-300 rounded-sm py-1 px-5 font-semibold">Closed</button>
+    </section>
+</body>
+</html>
