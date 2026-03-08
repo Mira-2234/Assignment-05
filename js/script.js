@@ -75,7 +75,7 @@ function displayIssues(issues){
             priorityColor = "bg-gray-200 text-gray-600"
         }
 
-        // labels array
+        // all labels array design
         const labelStyles ={
             bug:{
                 icon: "fa-solid fa-bug",    
