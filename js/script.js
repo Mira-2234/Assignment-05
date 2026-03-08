@@ -123,7 +123,7 @@ function displayIssues(issues){
         const card = document.createElement("div")
         card.className= "border rounded p-4 shadow-md hover:shadow-lg transition"  
         
-        // top border color in card
+        // top border color in issue card
         if(issue.status === "open"){
             card.classList.add("border-t-4", "border-green-500")
         }else{
