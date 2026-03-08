@@ -25,16 +25,16 @@
 </head>
 <body>
 
-    <nav class="w-full border border-b border-gray-300 py-3 ">
-       <div class="w-11/12 mx-auto flex justify-between mt-3 ">
-         <div class="flex gap-2 items-center">
+    <nav class="w-full border  border-b border-gray-300 py-3 ">
+       <div class=" w-11/12 mx-auto flex flex-col md:flex-row justify-between mt-3 ">
+         <div class="sm:mx-auto sm:mb-2 flex gap-2 items-center ">
         <img class="w-10" src="./assets/github-logo.png" alt="">
         <h2 class="text-[#1F2937] font-bold text-xl">GitHub Issues Tracker</h2>
        </div>
 
        <div class="flex gap-2">
 
-       <div class="relative w-80">
+       <div class="relative w-80 sm:mx-5">
          <input id="searchInput" 
          class="w-full border border-gray-300 rounded-md py-2 pl-10 pr-3 outline-none" 
          type="search" placeholder="Search issues..."> <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
@@ -45,8 +45,8 @@
     
     </nav>
 
-    <section class="mt-10 mx-40 bg-white shadow-sm rounded-sm p-5">
-        <div class="flex justify-between">
+    <section class="sm:mx-10 mt-10 md:mx-40 bg-white shadow-sm rounded-sm p-5">
+        <div class="flex flex-col md:flex-row justify-between">
             <div class="">
                 <div class="flex gap-2" >
             <img src="./assets/Aperture.png" alt="">
@@ -55,7 +55,7 @@
         <p class="text-[#64748B] ml-10">Track and manage your project issues</p>
             </div>
 
-        <div class="flex gap-5 text-sm ">
+        <div class="flex gap-5 text-sm sm:mx-10 sm:mt-2 ">
             <span class="flex items-center gap-2">
                 <span class="w-3 h-3 bg-green-500 rounded-full"></span>
                 Open
@@ -70,14 +70,14 @@
 
     </section>
 
-    <section class="mt-10 mx-40 bg-white shadow-sm rounded-sm p-5">
+    <section class="mt-10 mx-10 md:mx-40 bg-white shadow-sm rounded-sm p-5">
         <button onclick="filterIssues('all', this)" class="tab-btn border border-gray-300 rounded-sm py-1 px-5 font-semibold">All</button>
         <button onclick="filterIssues('open', this)"  class="tab-btn border border-gray-300 rounded-sm py-1 px-5 font-semibold">Open</button>
         <button onclick="filterIssues('closed', this)"  class="tab-btn border border-gray-300 rounded-sm py-1 px-5 font-semibold">Closed</button>
     </section>
 
     <!-- Issue card -->
-    <div id="issuesContainer" class=" mx-40 grid grid-cols-1 md:grid-cols-4 gap-4 mt-6 shadow-lg hover:shadow-2xl transition" >
+    <div id="issuesContainer" class="  md:mx-40 grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 shadow-lg hover:shadow-2xl transition" >
 
     </div>
 
