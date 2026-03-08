@@ -32,7 +32,7 @@ document.getElementById("searchInput")
     searchInput(searchText);
 })
 
-// Data count
+// Data count dynamically
 
 function updateIssueCounter(){
     const total = allIssues.length
